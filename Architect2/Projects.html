@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interior</title>
+        <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style type="text/css">
+                body{
+                    background:rgb(46, 44, 44);
+                    border: none;
+                }
+                .artibutton{
+                    background-color: rgb(46, 44, 44);
+                    border: none;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-family: sitkheading;
+                    position: absolute;
+                    top: 0.50%;
+                    left: 4%;
+                }
+                .box{
+                    position: absolute;
+                    top: 5%;
+                    left: 90%;
+                    transform: translate(-50%,-50%);
+                }
+                .input {
+                    padding: 0.625rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background: none;
+                    border:0.125rem solid white;
+                    border-radius: 3.125rem;
+                    box-sizing: border-box;
+                    font-family: sitkatext;
+                    font-size: 1.125rem;
+                    color: white;
+                    outline: none;
+                    transition: .5s;
+                }
+                .box:hover input{
+                    width: 12.5rem;
+                    height: 2.125rem;
+                    background: rgb(46, 44, 44);
+                    border-radius: 0.625rem;
+                }
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 1.625rem;
+                    color: white;
+                    transition: .2s;
+                    border: 3.4375rem;
+                }
+                .box:hover i{
+                    opacity: 0;
+                    z-index: -1;
+                }
+                .fontres{
+                    font-size: 1.3vw;
+                }
+                .menudiv{
+                    width: 23rem;
+                    position: absolute;
+                    left: 40%;
+                    top: 3%;
+                }
+                .container{
+                    background-color: black;
+                    transition: .3s;
+                }
+                .cont1{
+                    background-color: transparent;
+                    height: 53.5%;
+                    width: 22.5%;
+                    position: absolute;
+                    top: 13%;
+                    left: 2%; 
+                }
+                .text1{
+                    width: 75%;
+                    height: 0%;
+                    background-color: rgba(255, 153, 0, 0.336);
+                    position: absolute;
+                    bottom: 0%;
+                    left: 12%;
+                    border-top-left-radius: 1.557rem;
+                    border-top-right-radius: 1.557rem;
+                    color: transparent;
+                    text-align: center;
+                    font-family: Script MT;
+                    font-size: 1.8vw;
+                    transition: .2s ease;
+                }
+                .cont1:hover .text1{
+                    height: 12%;
+                    color: white;
+                }
+                .img1{
+                    background-color: transparent;
+                    height: 80%;
+                    width: 100%;
+                    transition: transform .5s; 
+                }
+                .img1:hover{
+                    transform: scale(1.1);
+                }
+                .cont2{
+                    background-color: transparent;
+                    height: 53.5%;
+                    width: 22.5%;
+                    position: absolute;
+                    top: 13%;
+                    left: 26.6%; 
+                }
+                .text2{
+                    width: 75%;
+                    height: 0%;
+                    background-color: rgba(255, 153, 0, 0.336);
+                    position: absolute;
+                    bottom: 0%;
+                    left: 12%;
+                    border-top-left-radius: 1.557rem;
+                    border-top-right-radius: 1.557rem;
+                    color: transparent;
+                    text-align: center;
+                    font-family: Script MT;
+                    font-size: 1.8vw;
+                    transition: .2s ease;
+                }
+                .cont2:hover .text2{
+                    height: 12%;
+                    color: white;
+                }
+                .img2{
+                    background-color: transparent;
+                    height: 80%;
+                    width: 100%;
+                    transition: transform .5s; 
+                }
+                .img2:hover{
+                    transform: scale(1.1);
+                }
+                .cont3{
+                    background-color: transparent;
+                    height: 53.5%;
+                    width: 22.5%;
+                    position: absolute;
+                    top: 13%;
+                    left: 51.2%; 
+                }
+                .text3{
+                    width: 75%;
+                    height: 0%;
+                    background-color: rgba(255, 153, 0, 0.336);
+                    position: absolute;
+                    bottom: 0%;
+                    left: 12%;
+                    border-top-left-radius: 1.557rem;
+                    border-top-right-radius: 1.557rem;
+                    color: transparent;
+                    text-align: center;
+                    font-family: Script MT;
+                    font-size: 1.8vw;
+                    transition: .2s ease;
+                }
+                .cont3:hover .text3{
+                    height: 12%;
+                    color: white;
+                }
+                .img3{
+                    background-color: transparent;
+                    height: 80%;
+                    width: 100%;
+                    transition: transform .5s; 
+                }
+                .img3:hover{
+                    transform: scale(1.1);
+                }
+                .cont4{
+                    background-color: transparent;
+                    height: 53.5%;
+                    width: 22.5%;
+                    position: absolute;
+                    top: 13%;
+                    left: 75.8%; 
+                }
+                .text4{
+                    width: 75%;
+                    height: 0%;
+                    background-color: rgba(255, 153, 0, 0.336);
+                    position: absolute;
+                    bottom: 0%;
+                    left: 12%;
+                    border-top-left-radius: 1.557rem;
+                    border-top-right-radius: 1.557rem;
+                    color: transparent;
+                    text-align: center;
+                    font-family: Script MT;
+                    font-size: 1.8vw;
+                    transition: .2s ease;
+                }
+                .cont4:hover .text4{
+                    height: 12%;
+                    color: white;
+                }
+                .img4{
+                    background-color: transparent;
+                    height: 80%;
+                    width: 100%;
+                    transition: transform .5s; 
+                }
+                .img4:hover{
+                    transform: scale(1.1);
+                }
+                .cont5{
+                    background-color: transparent;
+                    height: 54%;
+                    width: 22.5%;
+                    position: absolute;
+                    top: 67%;
+                    left: 2%; 
+                }
+                .text5{
+                    width: 75%;
+                    height: 0%;
+                    background-color: rgba(255, 153, 0, 0.336);
+                    position: absolute;
+                    top: 0%;
+                    bottom: 150%;
+                    left: 12%;
+                    border-bottom-left-radius: 1.557rem;
+                    border-bottom-right-radius: 1.557rem;
+                    color: transparent;
+                    text-align: center;
+                    font-family: Script MT;
+                    font-size: 1.8vw;
+                    transition: .2s ease;
+                }
+                .cont5:hover .text5{
+                    height: 12%;
+                    color: white;
+                }
+                .img5{
+                    margin-top: 5.69%;
+                    background-color: transparent;
+                    height: 80%;
+                    width: 100%;
+                    transition: transform .5s; 
+                }
+                .img5:hover{
+                    transform: scale(1.1);
+                }
+                .cont6{
+                    background-color: transparent;
+                    height: 54%;
+                    width: 22.5%;
+                    position: absolute;
+                    top: 67%;
+                    left: 26.6%; 
+                }
+                .text6{
+                    width: 75%;
+                    height: 0%;
+                    background-color: rgba(255, 153, 0, 0.336);
+                    position: absolute;
+                    top: 0%;
+                    bottom: 150%;
+                    left: 12%;
+                    border-bottom-left-radius: 1.557rem;
+                    border-bottom-right-radius: 1.557rem;
+                    color: transparent;
+                    text-align: center;
+                    font-family: Script MT;
+                    font-size: 1.8vw;
+                    transition: .2s ease;
+                }
+                .cont6:hover .text6{
+                    height: 12%;
+                    color: white;
+                }
+                .img6{
+                    margin-top: 5.69%;
+                    background-color: transparent;
+                    height: 80%;
+                    width: 100%;
+                    transition: transform .5s; 
+                }
+                .img6:hover{
+                    transform: scale(1.1);
+                }
+                .cont7{
+                    background-color: transparent;
+                    height: 54%;
+                    width: 22.5%;
+                    position: absolute;
+                    top: 67%;
+                    left: 51.2%; 
+                }
+                .text7{
+                    width: 75%;
+                    height: 0%;
+                    background-color: rgba(255, 153, 0, 0.336);
+                    position: absolute;
+                    top: 0%;
+                    bottom: 150%;
+                    left: 12%;
+                    border-bottom-left-radius: 1.557rem;
+                    border-bottom-right-radius: 1.557rem;
+                    color: transparent;
+                    text-align: center;
+                    font-family: Script MT;
+                    font-size: 1.8vw;
+                    transition: .2s ease;
+                }
+                .cont7:hover .text7{
+                    height: 12%;
+                    color: white;
+                }
+                .img7{
+                    margin-top: 5.69%;
+                    background-color: transparent;
+                    height: 80%;
+                    width: 100%;
+                    transition: transform .5s; 
+                }
+                .img7:hover{
+                    transform: scale(1.1);
+                }
+                .cont8{
+                    background-color: transparent;
+                    height: 54%;
+                    width: 22.5%;
+                    position: absolute;
+                    top: 67%;
+                    left: 75.8%; 
+                }
+                .text8{
+                    width: 75%;
+                    height: 0%;
+                    background-color: rgba(255, 153, 0, 0.336);
+                    position: absolute;
+                    top: 0%;
+                    bottom: 150%;
+                    left: 12%;
+                    border-bottom-left-radius: 1.557rem;
+                    border-bottom-right-radius: 1.557rem;
+                    color: transparent;
+                    text-align: center;
+                    font-family: Script MT;
+                    font-size: 1.8vw;
+                    transition: .2s ease;
+                }
+                .cont8:hover .text8{
+                    height: 12%;
+                    color: white;
+                }
+                .img8{
+                    margin-top: 5.69%;
+                    background-color: transparent;
+                    height: 80%;
+                    width: 100%;
+                    transition: transform .5s; 
+                }
+                .img8:hover{
+                    transform: scale(1.1);
+                }
+            </style>
+    </head>    
+    <body>
+        <div class="row">
+            <div class="col-Md-3">
+                <a href="HomePage.html"><button class="artibutton"><h1>Articlux</h1></button></a>
+                <div class="menudiv">
+                    <a href="#"><font face="sitkatext" color="white" class="fontres">Project</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><font face="sitkatext" color="white" class="fontres">About us</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><font face="sitkatext" color="white" class="fontres">Contack</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><font face="sitkatext" color="white" class="fontres">Clientele</font></a>
+                </div>
+                <div class="box">
+                    <form name="search">
+                        <input type="text" class="input" name="txt">
+                    </form>
+                    <i class="fas fa-search ab"></i>
+                </div>
+            </div>
+        </div>
+        <a>
+            <div class="cont1">
+                <center>
+                    <img src="pro1.jpeg" height="100%" width="100%" style="border-radius: 1.875rem;" class="img1">
+                </center>
+                <div class="text1">
+                    Penthouse
+                </div>
+            </div>
+        </a>
+        <a>
+            <div class="cont2">
+                <center>
+                    <img src="pro2.jpeg" height="100%" width="100%" style="border-radius: 1.875rem;" class="img2">
+                </center>
+                <div class="text2">
+                    Farm House
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="cont3">
+                <center>
+                    <img src="pro3.jpeg" height="100%" width="100%" style="border-radius: 1.875rem;" class="img3">
+                </center>
+                <div class="text3">
+                    Bungalow
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="cont4">
+                <center>
+                    <img src="pro4.png" height="100%" width="100%" style="border-radius: 1.875rem;" class="img4">
+                </center>
+                <div class="text4">
+                    High Rise
+                </div>
+            </div>
+        </a>
+        <a href="Interior.html">
+            <div class="cont5">
+                <center>
+                    <img src="pro5.jpeg" height="100%" width="100%" style="border-radius: 1.875rem;" class="img5">
+                </center>
+                <div class="text5">
+                    Interior
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="cont6">
+                <center>
+                    <img src="pro6.jpeg" height="100%" width="100%" style="border-radius: 1.875rem;" class="img6">
+                </center>
+                <div class="text6">
+                    Farm House
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="cont7">
+                <center>
+                    <img src="pro7.jpeg" height="100%" width="100%" style="border-radius: 1.875rem;" class="img7">
+                </center>
+                <div class="text7">
+                    Decorative Living-room
+                </div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="cont8">
+                <center>
+                    <img src="pro8.jpeg" height="100%" width="100%" style="border-radius: 1.875rem;" class="img8">
+                </center>
+                <div class="text8">
+                    Cafe
+                </div>
+            </div>
+        </a>
+    </body>
+</html>
